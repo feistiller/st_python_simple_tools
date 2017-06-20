@@ -5,7 +5,7 @@ import urllib2
 import time
 import re
 import sys
-import xlwt
+# import xlwt
 
 
 # getUrl
