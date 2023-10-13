@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐控制</title>
+    <script src="jquery.js"></script>
+    <style>
+        button{
+            width: 150px;
+            height: 50px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            padding-bottom: 20px;
+        }
+        .stop-btn{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(247, 84, 72);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="playMusic(1)">播放入场音乐</button>
+        <audio src="music/intro.mp3" loop="loop" controls="controls" id="music1"></audio>
+    </div>
+    <div>
+        <button onclick="playMusic(2)">播放抽奖音乐</button>
+        <audio src="music/cj.mp3" loop="loop" controls="controls" id="music2"></audio>
+    </div>
+    <div>
+        <button onclick="playMusic(3)">播放游戏音乐</button>
+        <audio src="music/game.mp3" loop="loop" controls="controls" id="music3"></audio>
+    </div>
+    <div>
+        <button onclick="playMusic(4)">播放颁奖音乐</button>
+        <audio src="music/bj.mp3" loop="loop" controls="controls" id="music4"></audio>
+    </div>
+    <div>
+        <button onclick="playMusic(5)">播放离场音乐</button>
+        <audio src="music/花海.mp3" loop="loop" controls="controls" id="music5"></audio>    
+    </div>
+
+    <button class="stop-btn" onclick="stopMusic()">停止音乐</button>
+    <script>
+        function playMusic(id){
+            stopMusic()
+            $("#music"+id)[0].play()
+        }
+        function stopMusic(){   
+            $("#music1")[0].pause()
+            $("#music2")[0].pause()
+            $("#music3")[0].pause()
+            $("#music4")[0].pause()
+            $("#music5")[0].pause()
+        }
+    </script>
+</body>
+</html>

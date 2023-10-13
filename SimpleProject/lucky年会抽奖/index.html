@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>年会抽奖</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .bg {
+            background-image: url("bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 216.667vh;
+            height: 100vh;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(230, 217, 37);
+            font-size: 10rem;
+        }
+        .c{
+            position:absolute;
+            bottom:20vh;
+            left: 5vw;
+            color: rgb(230, 217, 37);
+            float: left;
+        }
+        .c div{
+            padding: 5px;
+            width: 200px;
+        }
+
+    </style>
+    <script src="jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div id="lucky">开始抽奖</div>
+    </div>
+    <div class="c">
+        <div  id="c3">抽取三等奖</div>
+        <div id="c2">抽取二等奖</div>
+        <div  id="c1">抽取一等奖</div>
+        <div  id="c5">抽取特等奖</div>
+    </div>
+
+</body>
+
+<script>
+    let staff = ["张1", "张2", "张3", "王1", "王2", "王3", "王4"]
+   let time = {}
+    target = 1
+    name = ""
+    luckyId=4
+    $("#c3").click(function(){
+        $("#lucky").text("抽取三等奖")
+        luckyId=3
+    })
+    $("#c2").click(function(){
+        $("#lucky").text("抽取二等奖")
+        luckyId=2
+    })
+    $("#c1").click(function(){
+        $("#lucky").text("抽取一等奖")
+        luckyId=1
+    })
+    $("#c5").click(function(){
+        $("#lucky").text("抽取特等奖")
+        luckyId=5
+    })
+    $(document).keypress(function (e) {
+        console.log(e)
+        switch (e.keyCode) {
+            case 32: {
+                if (target == 1) {
+                    i = 0
+                    target = 2
+                    //服务器地址
+                    $.get("http://xxxxxxx/lucky/"+luckyId, function (data) {
+                        console.log(data)
+                        name = data.data
+                    })
+                    time = setInterval(function () {
+                        if (i < staff.length) {
+                            i = i + 1
+                            $("#lucky").text(staff[i])
+                        } else {
+                            i = 0
+                        }
+                    }, 50)
+                } else {
+                    target = 1
+                    clearInterval(time)
+                    $("#lucky").text(name)
+                }
+
+            }
+        }
+    })
+
+
+</script>
+
+</html>

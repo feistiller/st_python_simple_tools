@@ -27,6 +27,8 @@
     - [bHash](./PythonCV/bHash) bHash图片指纹算法，确定两张图片的相似程度 
 6. DB文件夹 一些为数据库写的脚本：
    - [db](./DB/db.py) 基础本地连接脚本，提供了常见的一些CURD方法
+7. SimpleProject 一些成品的简单工程：
+   - [年会抽奖](./SimpleProject/lucky年会抽奖)：Flask做的一个简单的抽奖项目，年会抽奖，按空格键可以停止，数据记录到数据库,还有一个简单的音乐控台HTML播放音乐
 
 
 
