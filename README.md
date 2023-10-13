@@ -25,6 +25,9 @@
     - [pytesser](./PythonCV/Pytesser) 图片识别与转换文字
     - [FindContour](./PythonCV/FindContour) 为在一张图片上寻找一个矩形的框图，并裁剪出来
     - [bHash](./PythonCV/bHash) bHash图片指纹算法，确定两张图片的相似程度 
+6. DB文件夹 一些为数据库写的脚本：
+   - [db](./DB/db.py) 基础本地连接脚本，提供了常见的一些CURD方法
+
 
 
 
