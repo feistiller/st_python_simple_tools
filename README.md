@@ -20,5 +20,12 @@
     - [processWatcher](./Server/prccessWatch.py)：Linux中的简单进程监控脚本，输出Log，现在这个脚本的是Nginx监控
     - [webUrlWatcher](./Server/webUrlWatcher.py):Web URL的打开请求监控，定时检测网址是不是能打开，输出Log
 
+5. PythonCV文件夹 一些练手的图片视觉算法:
+    - [FaceRecognition](./PythonCV/FaceRecognition) 为OpenCV简单的人脸识别的例子，使用到的是官方的人脸库
+    - [pytesser](./PythonCV/Pytesser) 图片识别与转换文字
+    - [FindContour](./PythonCV/FindContour) 为在一张图片上寻找一个矩形的框图，并裁剪出来
+    - [bHash](./PythonCV/bHash) bHash图片指纹算法，确定两张图片的相似程度 
+
+
 
 
