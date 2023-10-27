@@ -11,6 +11,7 @@
 
 2. File Handler文件夹 文件处理脚本：
    - [log2Excel](./File%20Handler/log2Excel.py)：本文文件转excel,其实就是一个读取文本文件转成Excel的脚本
+   - [edge-tts](./File%20Handler/degeTts):文本转语音脚本，调用edge-tts服务
 
 3. Time文件夹 时间相关的处理脚本:
     - [timestamp2LocalTime](./Time/timestamp2LocalTime.py): 一个简单的输入毫秒时间戳转成时间的命令行脚本
@@ -25,8 +26,10 @@
     - [pytesser](./PythonCV/Pytesser) 图片识别与转换文字
     - [FindContour](./PythonCV/FindContour) 为在一张图片上寻找一个矩形的框图，并裁剪出来
     - [bHash](./PythonCV/bHash) bHash图片指纹算法，确定两张图片的相似程度 
+   
 6. DB文件夹 一些为数据库写的脚本：
    - [db](./DB/db.py) 基础本地连接脚本，提供了常见的一些CURD方法
+   
 7. SimpleProject 一些成品的简单工程：
    - [年会抽奖](./SimpleProject/lucky年会抽奖)：Flask做的一个简单的抽奖项目，年会抽奖，按空格键可以停止，数据记录到数据库,还有一个简单的音乐控台HTML播放音乐
 
