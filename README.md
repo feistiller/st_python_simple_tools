@@ -12,6 +12,7 @@
 2. File Handler文件夹 文件处理脚本：
    - [log2Excel](./File%20Handler/log2Excel.py)：本文文件转excel,其实就是一个读取文本文件转成Excel的脚本
    - [edge-tts](./File%20Handler/degeTts):文本转语音脚本，调用edge-tts服务
+   - [re_name](./File%20Handler/re_name.py):根据文件夹的输入更改里面所有的文件是序列重命名
 
 3. Time文件夹 时间相关的处理脚本:
     - [timestamp2LocalTime](./Time/timestamp2LocalTime.py): 一个简单的输入毫秒时间戳转成时间的命令行脚本
