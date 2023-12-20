@@ -2,7 +2,17 @@ import edge_tts
 import os
 import asyncio
 
+# zh-CN-XiaoxiaoNeural
 
+# zh-CN-XiaoyiNeural
+
+# zh-CN-YunjianNeural
+
+# zh-CN-YunxiNeural
+
+# zh-CN-YunxiaNeural
+
+# zh-CN-YunyangNeural
 async def init_function():
     f = open(os.path.dirname(__file__) + "\\word.txt", "r+", encoding="utf-8")
     text = f.read()
