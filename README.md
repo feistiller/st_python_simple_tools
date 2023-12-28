@@ -7,6 +7,7 @@
    - [spiderDYTT](./Web%20Spider/spiderDYTT.py)：电影天堂最新电影爬虫
    - [spiderMP4](./Web%20Spider/spiderMP4ba.py)：mp4吧电影数据爬虫
    - [720comDownload](./Web%20Spider/720comVRImgDownloader.py):720全景网图片下载，好像已经无法使用了
+   - [autoOpenJSWebSite](./Web%20Spider/autoOpenJSWebSite.py):自动访问指定的网站，通过打开浏览器的方式，并在执行完成后自动关闭浏览器
    - 
 
 2. File Handler文件夹 文件处理脚本：
